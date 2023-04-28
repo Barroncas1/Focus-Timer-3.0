@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --bg-color: white;
+    --bg-button-press: #02799D;
+    --bg-button: #E1E1E6;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19.2rem;
+    background-color: #FFFFFF;
+
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+}
+
+.timer-wrapper {
+    width: 32.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    font-size: 12.6rem;
+    display: flex;
+    margin-bottom: 4.8rem;
+    
+   
+}
+
+.buttons {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.sounds-elements {
+    width: 30.8rem;
+    display: grid;
+    grid-template-areas: 'A B'
+    'C D';
+    gap: 3.2rem;
+}
+
+.sounds-elements button {
+    height: 15.2rem;
+    width: 13.8rem;
+    border-radius: 2.4rem;
+}
+
+.sounds-elements input {
+    margin-top: 3.2rem;
+    width: 9rem;
+    appearance: none;
+    border-radius: 5px;
+    height: 4px;
+    background-color: #323238;
+}
+
+.sounds-elements input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #323238;
+    border-radius: 100%;
+}
+
+.buttonNotPress button {
+    background-color: var(--bg-button);
+}
+
+.buttonNotPress button:hover {
+    background-color: #98989f;
+    
+}
+
+.buttonPress button {
+    background-color: #02799D;
+}
+
+.buttonPress path{
+    fill: white;
+}
+
+.buttonPress button:hover {
+    background: #025068;
+}
+
+.buttonPress input {
+    background-color: white;
+}
+
+.buttonPress input::-webkit-slider-thumb {
+    background-color: white;
+}
+
+
+.mode {
+    position: absolute;
+    top: 6.4rem;
+    right: 6.4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.dark span {
+    color: #FFFFFF;
+}
+
+
+.dark path {
+    fill: #C4C4CC;
+}
+
+.buttonNotPress.dark button {
+    background-color: #29292E;;
+}
+
+.buttonNotPress.dark button:hover {
+    background-color: #43434a;;
+}
+
+.buttonPress.dark button{
+    background-color: #0A3442;
+}
+
+.buttonPress.dark button:hover {
+    background-color: #13576d;
+}
+
+.dark input {
+    background-color: white;
+}
+
+.dark input::-webkit-slider-thumb {
+    background-color: white;
+}
+
+
+
+
+@media (width <= 870px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100%;
+        margin: 200px auto;
+        justify-content: center;
+        align-items: center;
+        zoom: 0.5;
+    }
+}
+
+
+
+
+
+
+
+
